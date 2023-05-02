@@ -1,8 +1,9 @@
-import { defineConfig } from "vite";
-import { checker } from "vite-plugin-checker";
-import solidPlugin from "vite-plugin-solid";
+import { defineConfig } from "vite"
+import { checker } from "vite-plugin-checker"
+import solidPlugin from "vite-plugin-solid"
 
 export default defineConfig({
+  base: "/vite_solid_template/",
   plugins: [
     solidPlugin(),
     checker({
@@ -18,4 +19,4 @@ export default defineConfig({
   build: {
     target: "esnext",
   },
-});
+})
